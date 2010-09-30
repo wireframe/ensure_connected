@@ -1,6 +1,16 @@
 = ensure_connected
 
-Description goes here.
+ensure database connection is valid before performing work.
+
+particularly important when running long running background jobs.
+
+= Usage
+
+  class User < ActiveRecord::Base
+    def perform_some_work
+    end
+    ensure_connected :perform_some_work
+  end
 
 == Note on Patches/Pull Requests
  
