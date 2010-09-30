@@ -5,11 +5,12 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "ensure_connected"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{ensure database connection is valid before performing work}
+    gem.description = %Q{ensure database connection is valid before performing work}
     gem.email = "ryan@socialcast.com"
     gem.homepage = "http://github.com/wireframe/ensure_connected"
     gem.authors = ["Ryan Sonnek"]
+    gem.add_runtime_dependency "active_record", ">= 2.1.0"
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
