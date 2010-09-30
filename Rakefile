@@ -10,7 +10,7 @@ begin
     gem.email = "ryan@socialcast.com"
     gem.homepage = "http://github.com/wireframe/ensure_connected"
     gem.authors = ["Ryan Sonnek"]
-    gem.add_runtime_dependency "active_record", ">= 2.1.0"
+    gem.add_runtime_dependency "activerecord", ">= 2.2.3"
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
